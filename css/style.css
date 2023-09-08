@@ -369,5 +369,116 @@ img {
         color: var(--green);
     }
 
-    
+/* archive */
+    .page-title {
+        font-size: var(--size1);
+        margin-bottom: 2rem;
+    }
+
+/* main */
+    .recipe-list,
+    .archive .recipe-list,
+    .search .recipe-list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .recipe-item:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,.16);
+    }
+
+    .recipe-categories li:hover {
+        background: var(--dark-grey);
+    }
+
+    .nav-links a:hover {
+        background: var(--dark-blue);
+        box-shadow: 0 4px 10px rgba(57, 86, 92, .6);
+    }
+
+    .recipe-item .recipe-thumbnail {
+        aspect-ratio: 4 / 3;
+    }
+
+/* single / page article */
+    .single .recipe-item .recipe-thumbnail,
+    .recipe-item .recipe-thumbnail {
+        aspect-ratio: 16 / 9;
+    }
+
+    .single .recipe-item:hover,
+    .post-item:hover {
+        box-shadow: none;
+    }
+
+    .single .site-header {
+        padding: 4rem 3rem 2rem;
+    }
+
+    .single .recipe-thumbnail + .site-header {
+        padding-top: 2rem;
+    }
+
+    .single .site-title {
+        font-size: var(--size1);
+    }
+
+    .post-content {
+        padding-bottom: 2rem;
+    }
+
+    .post-content h2 {
+        font-size: var(--size1);
+        margin-bottom: 1rem;
+    }
+
+    .post-content h3 {
+        font-size: var(--size1);
+        margin-top: 3rem;
+    }
+
+    .post-content h4 {
+        font-size: var(--size2);
+        margin-top: 3rem;
+    }
+
+    .post-content h3,
+    .post-content h4,
+    .post-content h5,
+    .post-content h6,
+    .post-content p,
+    .post-content ul,
+    .post-content ol,
+    .post-content figure,
+    .post-content blockquote {
+        margin-bottom: 1.5rem;
+    }
+
+    .post-content img {
+        margin-bottom: 1rem;
+    }
+    .post-content blockquote {
+        padding: 1.5rem 1.5rem .25rem 2.5rem;
+    }
+    .post-content blockquote::before {
+        top: 2px;
+        left: 10px;
+    }
+
+    .post-footer {
+        padding-bottom: 3rem;
+    }
+/* site */
+    .site-footer {
+        padding: 9rem 0 5rem;
+    }
+}
+
+/* MIDIUM SIZE */
+@media(min-width: 1000px) {
+    .home .recipe-list,
+    .archive .recipe-list,
+    .search .recipe-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
