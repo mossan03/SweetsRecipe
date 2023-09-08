@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理画面</title>
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@2.0.2/destyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="add-recipe">
+    <h1>レシピ追加</h1>
+    <form action="#">
+        <div class="sweet-name">
+            <h2>追加するレシピの名前</h2>
+            <input type="text" name="sweet_name">
+        </div>
+        <div class="upload">
+            <h2>画像をアップロード</h2>
+            <div class="upload-box">
+                <input type="file" accept="image/*" id="input" hidden/>  
+                <span>画像をドラッグ&ドロップ、または<br>クリックしてアップロードしてください！</span>
+              </div>
+              <div class="preview-box">
+                <img class="previewImg" src="" alt="" hidden />
+              </div>
+        </div>
+        <div >
+            <p>材料名<input type="text" name="ingredient_name"></p>
+            <p>数量<input type="text" name="ingredient_amount"></p>
+            <p>単位・重さ<input type="text" name="ingredient_unit">
+                <select size="1" name="sample" class="unit">
+                    <option value="unit">単位を選んでください</option>
+                    <option value="g">g</option>
+                    <option value="cc">cc</option>
+                    <option value="p">p</option>
+                </select>
+            </p>
+        </div>
+        <section class="category">
+            <h2>カテゴリーの選択</h2>
+            <div>
+                <input type="checkbox" name="category">
+                <label for="sweets">洋菓子</label>
+            </div>
+            <div>
+                <input type="checkbox" name="category">
+                <label for="baked">焼き菓子</label>
+            </div>
+        </section>
+        <div class="check">
+            <button class="check-btn" type="button">確認する</button>
+        </div>
+    </form>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

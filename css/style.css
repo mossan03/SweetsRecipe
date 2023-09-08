@@ -482,3 +482,56 @@ img {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+/* 管理者画面 */
+.add-recipe {
+    background-color: #fff;
+    margin: auto 20px;
+}
+
+.check-btn {
+    margin: 2em;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.sweet-name input {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.ingredient-wrapper input {
+    
+}
+
+.unit {
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+
+.upload-box,
+.preview-box {
+  width: 200px;
+  min-height: 150px;
+  margin: 20px;
+  padding: 5px;
+  border: 2px dashed #333;
+  border-radius: 8px;
+}
+.upload-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.upload-box span {
+  text-align: center;
+}
+.preview-box img { /* preview-box内に画像を収める */
+  width: 100%;
+  object-fit: cover;
+}
