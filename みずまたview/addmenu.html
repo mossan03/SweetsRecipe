@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="add-recipe">
-    <h1>レシピ追加</h1>
+    <h1>スイーツレシピ追加</h1>
     <form action="#">
-        <div class="sweet-name">
-            <h2>追加するレシピの名前</h2>
+        <div class="add-item">
+            <h2>追加するスイーツの名前</h2>
             <input type="text" name="sweet_name">
         </div>
-        <div class="upload">
-            <h2>画像をアップロード</h2>
+        <div class="upload add-item">
+            <h2>スイーツの完成画像</h2>
             <div class="upload-box">
                 <input type="file" accept="image/*" id="input" hidden/>  
                 <span>画像をドラッグ&ドロップ、または<br>クリックしてアップロードしてください！</span>
@@ -25,19 +25,29 @@
                 <img class="previewImg" src="" alt="" hidden />
               </div>
         </div>
-        <div >
-            <p>材料名<input type="text" name="ingredient_name"></p>
-            <p>数量<input type="text" name="ingredient_amount"></p>
-            <p>単位・重さ<input type="text" name="ingredient_unit">
-                <select size="1" name="sample" class="unit">
-                    <option value="unit">単位を選んでください</option>
-                    <option value="g">g</option>
-                    <option value="cc">cc</option>
-                    <option value="p">p</option>
-                </select>
-            </p>
+        <div class="add-item">
+            <h2>スイーツの材料</h2>
+            <table>
+                <tr>
+                    <th>材料名</th>
+                    <th>数量</th>
+                    <th>単位</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="ingredient_name"></td>
+                    <td><input type="text" name="ingredient_amount"></td>
+                    <td>
+                        <select size="1" name="sample" class="unit">
+                            <option hidden>－</option>
+                            <option value="グラム">グラム</option>
+                            <option value="cc">cc</option>
+                            <option value="ピース">ピース</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <section class="category">
+        <section class="category add-item">
             <h2>カテゴリーの選択</h2>
             <div>
                 <input type="checkbox" name="category">
@@ -48,12 +58,10 @@
                 <label for="baked">焼き菓子</label>
             </div>
         </section>
-        <div class="check">
+        <div class="check add-item">
             <button class="check-btn" type="button">確認する</button>
         </div>
     </form>
-
-    
     <script src="js/script.js"></script>
 </body>
 </html>

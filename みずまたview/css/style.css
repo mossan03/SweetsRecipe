@@ -489,28 +489,34 @@ img {
     margin: auto 20px;
 }
 
-.check-btn {
-    margin: 2em;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 8px;
+.add-recipe h1 {
+    font-size: var(--size1);
+    padding-top: 15px;
+    margin-bottom: var(--size1);
 }
 
-.sweet-name input {
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 8px;
+.add-recipe h2 {
+    font-size: var(--size2);
 }
 
-.ingredient-wrapper input {
-    
-}
-
+.add-recipe input[type=text],
 .unit {
+    margin: 10px 15px;
+    padding: 5px;
     border: 1px solid #000;
     border-radius: 8px;
 }
 
+.add-item {
+    margin-bottom: var(--size2);
+}
+
+.check-btn {
+    /* margin: 2em; */
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
 
 .upload-box,
 .preview-box {
